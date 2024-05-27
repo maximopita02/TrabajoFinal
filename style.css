@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+padding: 0;
+}
+header {
+    background-color:#1A5276;
+    padding: 0 50px;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    color:#fff;
+}
+.Menu a{
+    text-transform: uppercase;
+    padding: 0 10px;
+    text-decoration: none;
+    color: #fff;
+}
+.mostrar-menu,
+.esconder-menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+}
+.mostrar-menu{
+    order: 1;
+}
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    color: #FFE4C4;
+}
+#check{
+    display: none;
+}
+.Logo img{
+    height: 30px;
+    width: 30px;
+}
+body{
+    background-color: #1D8348 
+}
+/* Responsive */
+@media(max-width: 480px){
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+    .Menu{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: #1A5276;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+    .Menu a{
+        display: block;
+        padding:20px;
+
+    }
+.esconder-menu{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+#check:checked ~ .Menu{
+    right: 0;
+}
+}
