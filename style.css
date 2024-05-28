@@ -3,7 +3,7 @@
 padding: 0;
 }
 header {
-    background-color:#1A5276;
+    background-color:#186A3B;
     padding: 0 50px;
     display: flex;
     height: 100px;
@@ -35,12 +35,21 @@ header {
 #check{
     display: none;
 }
-.Logo img{
-    height: 30px;
-    width: 30px;
-}
+
 body{
-    background-color: #1D8348 
+    background-color: #FEF5E7
+}
+footer{
+    background-color: #186A3B;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+footer p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 /* Responsive */
 @media(max-width: 480px){
@@ -52,7 +61,7 @@ body{
         position: fixed;
         width: 100%;
         height: 100%;
-        background: #1A5276;
+        background: #186A3B;
         right: -100%;
         top: 0;
         text-align: center;
@@ -72,5 +81,89 @@ body{
 }
 #check:checked ~ .Menu{
     right: 0;
+}
+
+/*Index*/
+.Menu img {
+  width: 30%;
+  height: auto;
+  margin-top: 15%;
+}
+.QuienesSomos {
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 65px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, .05), 0 15px 20px rgba(0, 0, 0, .05);
+}
+.QuienesSomos h2{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif
+}
+.QuienesSomos p{
+    margin-top: 15px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Mision {
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 65px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, .05), 0 15px 20px rgba(0, 0, 0, .05);
+}
+.Mision h2{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Mision p{
+    margin-top: 15px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Mision img{
+    margin-top: 20px;
+    width: 100%;
+    height: auto
+}
+
+.ImpoReci {
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 65px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, .05), 0 15px 20px rgba(0, 0, 0, .05);
+}
+.ImpoReci h2{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif
+}
+.ImpoReci P{
+    margin-top: 15px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ImpoReci img{
+    margin-top: 20px;
+    width: 100%;
+    height: auto
+}
+footer p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 }
