@@ -39,13 +39,13 @@ header {
 body{
     background-color: #FEF5E7
 }
-footer{
+.Footer{
     background-color: #186A3B;
     justify-content: center;
     display: flex;
     width: 100%;
 }
-footer p{
+.Footer p{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     margin-left: 2%;
@@ -82,13 +82,20 @@ footer p{
 #check:checked ~ .Menu{
     right: 0;
 }
-
-/*Index*/
-.Menu img {
-  width: 30%;
-  height: auto;
-  margin-top: 15%;
+.Footer p{
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    font-size: 10px;
+    margin-left: 8%;
+    margin-right: 8%;
 }
+.Menu img {
+    width: 30%;
+    height: auto;
+    margin-top: 15%;
+  }
+/*Index*/
+
 .QuienesSomos {
     justify-content: center;
     width: 80%;
@@ -113,7 +120,7 @@ footer p{
     justify-content: center;
     width: 80%;
     margin-left: 10%;
-    margin-right: 10%;
+    margin-right: 15%;
     margin-top: 65px;
     margin-bottom: 50px;
     border-radius: 5px;
@@ -160,10 +167,71 @@ footer p{
     width: 100%;
     height: auto
 }
-footer p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
-    margin-left: 5%;
-    margin-right: 5%;
+/*Tipos de reciclaje*/
+.Tipos{
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 65px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, .05), 0 15px 20px rgba(0, 0, 0, .05);   
+}
+.RePlas{
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 65px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, .05), 0 15px 20px rgba(0, 0, 0, .05);   
+}
+.RecPa{
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 65px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, .05), 0 15px 20px rgba(0, 0, 0, .05);   
+}
+.RecVi{
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 65px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, .05), 0 15px 20px rgba(0, 0, 0, .05);   
+}
+.RecAli{
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 65px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, .05), 0 15px 20px rgba(0, 0, 0, .05);   
+}
+.RecNo{
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 65px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, .05), 0 15px 20px rgba(0, 0, 0, .05);   
 }
 }
