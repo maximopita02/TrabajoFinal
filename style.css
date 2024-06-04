@@ -106,7 +106,7 @@ body{
   }
 /*Index*/
 
-.QuienesSomos {
+.QuienesSomos, .Mision, .ImpoReci {
     justify-content: center;
     width: 80%;
     margin-left: 10%;
@@ -126,17 +126,7 @@ body{
     font-size: 13px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.Mision {
-    justify-content: center;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 15%;
-    margin-top: 65px;
-    margin-bottom: 50px;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, .05), 0 15px 20px rgba(0, 0, 0, .05);
-}
+
 .Mision h2{
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
@@ -152,17 +142,7 @@ body{
     height: auto
 }
 
-.ImpoReci {
-    justify-content: center;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 65px;
-    margin-bottom: 50px;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, .05), 0 15px 20px rgba(0, 0, 0, .05);
-}
+
 .ImpoReci h2{
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif
@@ -178,7 +158,7 @@ body{
     height: auto
 }
 /*Tipos de reciclaje*/
-.Tipos{
+.Tipos, .RePlas, .RecPa, .RecVi, .RecNo, .RecAli{
     justify-content: center;
     width: 80%;
     margin-left: 10%;
@@ -189,65 +169,25 @@ body{
     padding: 10px;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, .05), 0 15px 20px rgba(0, 0, 0, .05);   
 }
-.RePlas{
-    justify-content: center;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 65px;
-    margin-bottom: 30px;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, .05), 0 15px 20px rgba(0, 0, 0, .05);   
-}
+
 .RePlas img{
     margin-top: 20px;
     width: 100%;
     height: auto
 }
-.RecPa{
-    justify-content: center;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 65px;
-    margin-bottom: 30px;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, .05), 0 15px 20px rgba(0, 0, 0, .05);   
-}
+
 .RecPa img{
     margin-top: 20px;
     width: 100%;
     height: auto
 }
-.RecVi{
-    justify-content: center;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 65px;
-    margin-bottom: 30px;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, .05), 0 15px 20px rgba(0, 0, 0, .05);   
-}
+
 .RecVi img{
     margin-top: 20px;
     width: 100%;
     height: auto
 }
-.RecAli{
-    justify-content: center;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 65px;
-    margin-bottom: 30px;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, .05), 0 15px 20px rgba(0, 0, 0, .05);   
-}
+
 .RecAli img{
     margin-top: 20px;
     width: 100%;
@@ -269,4 +209,17 @@ body{
     width: 100%;
     height: auto
 }
+/*Propuesta*/
+.NuestraPropuesta, .RecEdu, .SepResiduos, .ReutiMat, .RedPlas {
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 65px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, .05), 0 15px 20px rgba(0, 0, 0, .05);   
+}
+
 }
