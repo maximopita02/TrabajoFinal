@@ -1,3 +1,4 @@
+/* Principal */
 *{
     margin: 0;
 padding: 0;
@@ -9,13 +10,13 @@ header {
     height: 100px;
     align-items: center;
     justify-content: space-between;
-    color:#fff;
+
 }
 .Menu a{
     text-transform: uppercase;
     padding: 0 10px;
     text-decoration: none;
-    color: #fff;
+    color: #ffff;
 }
 .mostrar-menu,
 .esconder-menu{
@@ -35,6 +36,9 @@ header {
 #check{
     display: none;
 }
+img{
+    border-radius: 5%;
+}
 
 body{
     background-color: #FEF5E7
@@ -48,9 +52,13 @@ body{
 .Footer p{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
+/* Index */
+
 /* Responsive */
 @media(max-width: 480px){
     .mostrar-menu,
@@ -192,6 +200,11 @@ body{
     padding: 10px;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, .05), 0 15px 20px rgba(0, 0, 0, .05);   
 }
+.RePlas img{
+    margin-top: 20px;
+    width: 100%;
+    height: auto
+}
 .RecPa{
     justify-content: center;
     width: 80%;
@@ -202,6 +215,11 @@ body{
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, .05), 0 15px 20px rgba(0, 0, 0, .05);   
+}
+.RecPa img{
+    margin-top: 20px;
+    width: 100%;
+    height: auto
 }
 .RecVi{
     justify-content: center;
@@ -214,6 +232,11 @@ body{
     padding: 10px;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, .05), 0 15px 20px rgba(0, 0, 0, .05);   
 }
+.RecVi img{
+    margin-top: 20px;
+    width: 100%;
+    height: auto
+}
 .RecAli{
     justify-content: center;
     width: 80%;
@@ -225,6 +248,11 @@ body{
     padding: 10px;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, .05), 0 15px 20px rgba(0, 0, 0, .05);   
 }
+.RecAli img{
+    margin-top: 20px;
+    width: 100%;
+    height: auto
+}
 .RecNo{
     justify-content: center;
     width: 80%;
@@ -235,5 +263,10 @@ body{
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, .05), 0 15px 20px rgba(0, 0, 0, .05);   
+}
+.RecNo img{
+    margin-top: 20px;
+    width: 100%;
+    height: auto
 }
 }
