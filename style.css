@@ -1,225 +1,103 @@
-/* Principal */
-*{
-    margin: 0;
-padding: 0;
-}
 header {
-    background-color:#186A3B;
-    padding: 0 50px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.QuienesSomosContainer {
     display: flex;
-    height: 100px;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 40px auto 20px;
+    padding: 0 8px;
 
 }
-.Menu a{
-    text-transform: uppercase;
-    padding: 0 10px;
-    text-decoration: none;
-    color: #ffff;
+
+.titlePage {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 28px;
+
 }
-.mostrar-menu,
-.esconder-menu{
-    font-size: 30px;
+
+.bannerContainer {
+    width: 100%;
+}
+
+.bannerImage {
+    width: 100%;
+    height: 400px;
+    object-fit: fill;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.info-card {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    border: 1px solid #d3d3d3;
+    border-radius: 40px;
+    column-gap: 32px;
+}
+
+.text-content-card {
+    padding: 30px 20px;
+}
+
+.titleSubContent{
+    margin-bottom: 16px;
+}
+.image-info-card{
+    border-radius: 40px 0 0 40px;
+}
+.ImpoReci{
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.ImpoReci p{
+    margin-bottom: 0;
+}
+/*NUESTRA PROPUESTA*/
+.NuestraPropuesta{
+    margin: 0 0 54px;
+    padding: 54px 16px 0;
+    text-align: center;
+}
+.info-card{
+    margin-bottom: 32px;
+}
+.image-info-card{
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
+}
+/*Reciclado*/
+
+.tipos-imagenes{
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+    row-gap: 28px;
+    column-gap: 1rem;
+    margin: 0 auto;
+}
+
+.imagen-tipo{
+    width: 300px;
+    height: 250px;
+    border-radius: 18px;
+    margin: 0 16px;
     cursor: pointer;
-    display: none;
-    transition: 0.4s;
 }
-.mostrar-menu{
-    order: 1;
-}
-.menu a:hover,
-.mostrar-menu:hover,
-.esconder-menu:hover{
-    color: #FFE4C4;
-}
-#check{
-    display: none;
-}
-img{
-    border-radius: 5%;
-}
-
-body{
-    background-color: #FEF5E7
-}
-.Footer{
-    background-color: #186A3B;
-    justify-content: center;
-    display: flex;
-    width: 100%;
-}
-.Footer p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    margin-left: 0%;
-    margin-right: 0%;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-/* Index */
-
-/* Responsive */
-@media(max-width: 480px){
-    .mostrar-menu,
-    .esconder-menu{
-        display: block;
-    }
-    .Menu{
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        background: #186A3B;
-        right: -100%;
-        top: 0;
-        text-align: center;
-        padding: 100px 0px;
-        z-index: 100;
-        transition: 0.8s;
-    }
-    .Menu a{
-        display: block;
-        padding:20px;
-
-    }
-.esconder-menu{
-    position: absolute;
-    top: 40px;
-    right: 40px;
-}
-#check:checked ~ .Menu{
-    right: 0;
-}
-.Footer p{
-    font-family: Arial, Helvetica, sans-serif;
-    justify-content: center;
-    font-size: 10px;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-}
-.Menu img {
-    width: 30%;
-    height: auto;
-    margin-top: 15%;
-  }
-/*Index*/
-
-.QuienesSomos, .Mision, .ImpoReci {
-    justify-content: center;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 65px;
-    margin-bottom: 30px;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, .05), 0 15px 20px rgba(0, 0, 0, .05);
-}
-.QuienesSomos h2{
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif
-}
-.QuienesSomos p{
-    margin-top: 15px;
-    font-size: 13px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.Mision h2{
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.Mision p{
-    margin-top: 15px;
-    font-size: 13px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.Mision img{
-    margin-top: 20px;
-    width: 100%;
-    height: auto
-}
-
-
-.ImpoReci h2{
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif
-}
-.ImpoReci P{
-    margin-top: 15px;
-    font-size: 13px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.ImpoReci img{
-    margin-top: 20px;
-    width: 100%;
-    height: auto
-}
-/*Tipos de reciclaje*/
-.Tipos, .RePlas, .RecPa, .RecVi, .RecNo, .RecAli{
-    justify-content: center;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 65px;
-    margin-bottom: 30px;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, .05), 0 15px 20px rgba(0, 0, 0, .05);   
-}
-
-.RePlas img{
-    margin-top: 20px;
-    width: 100%;
-    height: auto
-}
-
-.RecPa img{
-    margin-top: 20px;
-    width: 100%;
-    height: auto
-}
-
-.RecVi img{
-    margin-top: 20px;
-    width: 100%;
-    height: auto
-}
-
-.RecAli img{
-    margin-top: 20px;
-    width: 100%;
-    height: auto
-}
-.RecNo{
-    justify-content: center;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 65px;
-    margin-bottom: 30px;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, .05), 0 15px 20px rgba(0, 0, 0, .05);   
-}
-.RecNo img{
-    margin-top: 20px;
-    width: 100%;
-    height: auto
-}
-/*Propuesta*/
-.NuestraPropuesta, .RecEdu, .SepResiduos, .ReutiMat, .RedPlas {
-    justify-content: center;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 65px;
-    margin-bottom: 30px;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, .05), 0 15px 20px rgba(0, 0, 0, .05);   
-}
-
+.selectedTipo{
+    border: 1px solid red;
 }
