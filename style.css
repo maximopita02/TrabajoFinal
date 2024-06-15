@@ -4,10 +4,10 @@ header {
     left: 0;
     z-index: 1000;
 }
-header .navbar{
+header.navbar{
     background-color: #239B56;
 }
-a .navlink{
+a.navlink{
     font-size: 13px;
 }
 .navbar-brand img{
@@ -129,10 +129,18 @@ max-width: 1200px;
 }
 /*Responsive*/
 @media (max-width: 480px){
+    div.offcanvas{
+        background-color: #239B56;
+    }
+  a.nav-link, .nav-link-active{
+    font-size: 20px;
+    color: aliceblue;
+  }
     /*Index*/
     .QuienesSomosContainer, .ImpoReci{
-        margin: 15px auto 15px auto;
+        margin: 15px 10px 15px 10px;
         font-size: 14px;
+        text-align: justify;
     }
    .MisionContainer p{
     font-size: 14px;
@@ -144,4 +152,19 @@ flex-direction: column;
     width: 50vh;
     height: auto;
 }
+  /*Propuesta*/
+  .NuestraPropuesta{
+    margin: 7px 10px 35px 10px;
+    text-align: justify;
+  }
+  .NuestraPropuesta, .RecEdu, .SepResiduos, .ReutiMat, .RedPlas p{
+    font-size: 14px;
+  }
+  .NuestraPropuesta, .RecEdu, .SepResiduos, .ReutiMat, .RedPlas h2{
+font-size: 15px;
+  }
+  .RecEdu, .SepResiduos, .ReutiMat, .RedPlas{
+    flex-direction: column ;
+    margin: 15px 10px 20px 10px;
+  }
 }
