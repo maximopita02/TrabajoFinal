@@ -4,16 +4,42 @@ header {
     left: 0;
     z-index: 1000;
 }
-
+header .navbar{
+    background-color: #239B56;
+}
+a .navlink{
+    font-size: 13px;
+}
+.navbar-brand img{
+    width: 13vh;
+    height: auto;
+    margin-left: 5vh;
+}
+/*Index*/
 .QuienesSomosContainer {
     display: flex;
     flex-direction: column;
-    max-width: 1200px;
-    margin: 40px auto 20px;
+max-width: 1200px;
+    margin: 80px auto 50px auto;
     padding: 0 8px;
-
 }
-
+.ImpoReci{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin:  90px auto 50px auto;
+    padding: 0 8px;
+}
+.ImpoReci img{
+    width: 120vh;
+    height: auto;
+    border-radius: 5%;
+    justify-content: center;
+    margin: 80px auto 15px auto;
+}
+.MisionContainer.info-card{
+    margin: 60px auto 70px auto;
+}
 .titlePage {
     font-size: 32px;
     line-height: 38px;
@@ -100,4 +126,22 @@ header {
 }
 .selectedTipo{
     border: 1px solid red;
+}
+/*Responsive*/
+@media (max-width: 480px){
+    /*Index*/
+    .QuienesSomosContainer, .ImpoReci{
+        margin: 15px auto 15px auto;
+        font-size: 14px;
+    }
+   .MisionContainer p{
+    font-size: 14px;
+   }
+    .MisionContainer.info-card{
+flex-direction: column;
+    }
+.ImpoReci img{
+    width: 50vh;
+    height: auto;
+}
 }
