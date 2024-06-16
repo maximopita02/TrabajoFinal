@@ -19,6 +19,10 @@ header .navbar img {
 a.navlink{
     font-size: 13px;
 }
+a.nav-link, .nav-link-active{
+    font-size: 20px;
+    color: aliceblue;
+  }
 .navbar-brand img{
     width: 13vh;
     height: auto;
@@ -103,7 +107,7 @@ max-width: 1200px;
 }
 /*NUESTRA PROPUESTA*/
 .NuestraPropuesta{
-    margin: 0 0 54px;
+    margin: 0 auto 54px auto;
     padding: 54px 16px 0;
     text-align: center;
 }
@@ -138,6 +142,38 @@ max-width: 1200px;
 .selectedTipo{
     border: 1px solid red;
 }
+/*Contactos*/
+.Contacto{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 15px auto 15px auto;
+}
+h2.Contacto{
+   font-size: 20px;
+}
+p.Contacto{
+  font-size: 15px;
+  justify-content: center;
+  text-align: justify;
+  margin: 10px 30px 10px 30px;
+}
+.ImgCon{
+    align-items: flex-end;
+    padding: 50px 50px 50px 50px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.ImgCon p{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.ImgCon img{
+    width: 8vh;
+    width: auto;
+}
 /*Responsive*/
 @media (max-width: 1000px){
     div.offcanvas{
@@ -156,7 +192,19 @@ max-width: 1200px;
         max-width: calc(100vw - 32px);
         margin: 60px 16px 70px;
       }
-    
+/*Contactos*/
+.ImgCon{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ImgCon img{
+    margin-bottom: 15px;
+   
+}
+.ImgCon p{
+    font-size: 13px;
+}
 }
 @media (max-width: 700px){
     .info-card{
