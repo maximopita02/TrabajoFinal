@@ -4,8 +4,17 @@ header {
     left: 0;
     z-index: 1000;
 }
-header.navbar{
-    background-color: #239B56;
+header .navbar{
+    background-color: #239B56 !important;
+}
+header .navbar .navbar-brand {
+    display: flex;
+    align-items: center;
+    row-gap: 16px;
+}
+header .navbar img {
+    width: unset;
+    height: 50px;
 }
 a.navlink{
     font-size: 13px;
@@ -15,6 +24,8 @@ a.navlink{
     height: auto;
     margin-left: 5vh;
 }
+header .navbar span {
+    font-weight: 600;}
 /*Index*/
 .QuienesSomosContainer {
     display: flex;
@@ -31,7 +42,7 @@ max-width: 1200px;
     padding: 0 8px;
 }
 .ImpoReci img{
-    width: 120vh;
+    width: 100%;
     height: auto;
     border-radius: 5%;
     justify-content: center;
@@ -128,6 +139,34 @@ max-width: 1200px;
     border: 1px solid red;
 }
 /*Responsive*/
+@media (max-width: 1000px){
+    div.offcanvas{
+        background-color: #239B56;
+        
+    }
+    a.nav-link, .nav-link-active{
+        font-size: 20px;
+        color: aliceblue;
+      }
+      header .navbar img{
+        margin-left: 16px;
+      }
+      .info-card,
+      .MisionContainer {
+        max-width: calc(100vw - 32px);
+        margin: 60px 16px 70px;
+      }
+    
+}
+@media (max-width: 700px){
+    .info-card{
+        flex-direction: column;
+            }
+     .image-info-card{
+                border-radius: 40px 40px 0 0;
+                width: 100%;
+            }
+}
 @media (max-width: 480px){
     div.offcanvas{
         background-color: #239B56;
@@ -145,11 +184,9 @@ max-width: 1200px;
    .MisionContainer p{
     font-size: 14px;
    }
-    .MisionContainer.info-card{
-flex-direction: column;
-    }
+    
 .ImpoReci img{
-    width: 50vh;
+    width: 100%;
     height: auto;
 }
   /*Propuesta*/
