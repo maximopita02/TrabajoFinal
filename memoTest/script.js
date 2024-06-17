@@ -14,8 +14,8 @@ modal.classList.add('modalJuego');
 // Crear el contenido del modal
 modal.innerHTML = `
     <div class="modalJuego-header">
-      <h1>Título del Modal</h1>
-      <h2>Subtítulo del Modal</h2>
+      <h1>¡Terminaste el juego!</h1>
+      <h2>Para jugar devuelta haga click en Reiniciar</h2>
     </div>
     <div class="modalJuego-footer">
       <button class="close-btn">Volver al inicio</button>

@@ -2,6 +2,7 @@ body,
 html {
   margin: 0 auto;
   padding: 0;
+
   box-sizing: border-box;
   background-repeat: no-repeat;
   background-size: cover;
@@ -136,9 +137,10 @@ main{
 }
 
 .modalJuego-header h2 {
-  margin: 0;
+  margin: 16px 0 0;
   font-size: 18px;
   color: #666;
+  text-align: center;
 }
 
 .modalJuego-footer {
@@ -159,10 +161,88 @@ main{
 }
 
 .modalJuego-footer .confirm-btn {
-  background-color: #007BFF;
+  background-color: #239B56;
   color: white;
 }
+/*Footer*/
 
+.Footer {
+    background-color: #404040;
+    color: white;
+    height: auto;
+    padding: 20px 0 16px;
+    margin: 15px 0 0;
+    width: 100%;
+}
+.logo-uade{
+    height: 40px;
+}
+.grupo-link a{
+    color: #239B56 ;
+}
+.info-clase-container,
+.integrantes{
+    margin-bottom: 8px;
+}
+.grupo-link {
+    display: flex;justify-content: space-between;
+    padding: 0 16px;
+    margin-bottom: 16px;
+}
+.footer-content{
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+header .navbar{
+  background-color: #239B56 !important;
+}
+header .navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+  row-gap: 16px;
+}
+header .navbar img {
+  width: unset;
+  height: 50px;
+}
+a.navlink{
+  font-size: 13px;
+}
+.navbar-brand img{
+  width: 13vh;
+  height: auto;
+  margin-left: 5vh;
+}
+a.nav-link, .nav-link-active{
+  font-size: 20px;
+  color: aliceblue;
+}
+header .navbar span {
+  font-weight: 600;}
+  @media (max-width: 1000px){
+    div.offcanvas{
+        background-color: #239B56;
+        
+    }
+   
+    a.nav-link, .nav-link-active{
+        font-size: 20px;
+        color: aliceblue;
+    }
+    header .navbar img{
+        margin-left: 16px;
+    }
+   
+    
+}
 
 @keyframes appear {
   0% {
